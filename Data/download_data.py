@@ -1,10 +1,17 @@
+"""
+Download script for the Brent energy dataset.
+Run this locally (NOT in Colab) to generate brent_energy_dataset.csv
+
+Requirements: pip install yfinance pandas
+"""
+
 import yfinance as yf
 import pandas as pd
 
 tickers = [
-    'BZ=F', 'CL=F', 'RB=F', 'HO=F',     # Commodity futures (Brent, WTI, Gasoline, Heating Oil)
-    'XLE', 'USO', 'XOP',                   # ETFs
-    'BP', 'SHEL', 'TTE', 'E', 'EQNR',     # G10 equities
+    'BZ=F', 'CL=F', 'RB=F', 'HO=F',     # Commodity futures
+    'XLE', 'USO', 'XOP',                   # Sector ETFs
+    'BP', 'SHEL', 'TTE', 'E', 'EQNR',    # G10 equities
     'REPYY', 'WDS', 'PBR', 'CVX', 'XOM'   # G10 equities (continued)
 ]
 
