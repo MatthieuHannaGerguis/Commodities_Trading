@@ -1,4 +1,4 @@
-# Commodity Trading Games — Energy Sector (Brent Crude Oil)
+# Commodity Trading Games - Energy Sector (Brent Crude Oil)
 
 ### ESILV · Master Financial Engineering · Commodities Markets and Models · Spring 2026
 
@@ -12,10 +12,10 @@
 
 This repository contains our final project for the Commodities Markets and Models course. We designed and backtested two quantitative trading strategies on the energy commodity sector, with Brent Crude Oil (ICE Futures) as our primary anchor.
 
-**Game #1 — Optimal Market-Neutral Trading** (Sacha KEREDAN)
+**Game #1 - Optimal Market-Neutral Trading** (Sacha KEREDAN)
 Constructs a zero-beta portfolio of 5 energy assets using bi-objective optimization. Adapted from [Yang & Malik (2024)](https://doi.org/10.3390/ijfs12030077). The portfolio is completely insulated from oil price direction: realized beta = -0.039, R2 = 1.7% vs Brent.
 
-**Game #2 — Beating Passive Strategies** (Matthieu HANNA GERGUIS)
+**Game #2 - Beating Passive Strategies** (Matthieu HANNA GERGUIS)
 Trades the Brent-Gasoline crack spread with dynamic risk management: volatility filter, trailing stop-loss, lookback optimization. Adapted from [Palazzi (2025)](https://doi.org/10.1002/fut.70018). Achieves a Calmar ratio of 0.982 with max drawdown of only -10.19%.
 
 Both strategies are profitable in bull and bear regimes, while buy-and-hold Brent loses -26.12% in bear markets.
@@ -91,7 +91,7 @@ No path to change, no API key needed, no parameter to tweak.
 
 ## Methodology
 
-### Game #1 — Market-Neutral (Yang & Malik 2024)
+### Game #1 - Market-Neutral (Yang & Malik 2024)
 
 Selects 5 assets cointegrated with Brent and optimizes portfolio weights to achieve zero market exposure. The optimization maximizes expected return minus a risk penalty, subject to a market-neutrality constraint (sum of beta-weighted positions = 0) and a no-leverage constraint (total allocation <= 100%).
 
@@ -99,7 +99,7 @@ Optimal weights: long RB=F (+24.6%), short HO=F (-49.1%), long XOP (+26.3%). Bet
 
 Solved with `scipy.optimize.minimize` (SLSQP), equivalent to Gurobi for this convex problem.
 
-### Game #2 — Pairs Trading (Palazzi 2025)
+### Game #2 - Pairs Trading (Palazzi 2025)
 
 Trades the Brent-Gasoline crack spread (cointegration p = 0.0034, R2 = 94.1%, half-life = 19.2 days) with four risk management layers:
 
@@ -137,4 +137,4 @@ Trades the Brent-Gasoline crack spread (cointegration p = 0.0034, R2 = 94.1%, ha
 
 ---
 
-*Submitted on DVL — March 31, 2026*
+*Submitted on DVL - March 31, 2026*
