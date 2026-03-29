@@ -1,5 +1,0 @@
-projet sacha meme csv  
-faire avec la meme forme que moi 
-le mettre dans un fichier avec genre son code + le mien + CSV + le rapport
-mettre dans le rapport le GitHub 
-bonus : mettre GitHub sur le notebook histoire que le prof puisse le voir 
