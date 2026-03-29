@@ -61,8 +61,8 @@ The cointegration analysis found that only the crack spread (Brent vs Gasoline, 
 │   ├── brent_energy_dataset.csv                # Pre-built dataset (17 assets, 1822 days)
 │   └── download_data.py                        # Script to regenerate the CSV (run locally)
 ├── Notebook/
-│   ├── Game1_KEREDAN_HANNA_GERGUIS.ipynb       # Game #1 notebook (Colab-ready)
-│   └── Game2_HANNA GERGUIS_KEREDAN.ipynb       # Game #2 notebook (Colab-ready)
+│   ├── Game1.ipynb                             # Game #1 notebook (Colab-ready)
+│   └── Game2.ipynb                             # Game #2 notebook (Colab-ready)
 ├── Report/
 │   └── Report_KEREDAN_HANNA_GERGUIS.pdf        # Final report (18 pages)
 └── Subject/
